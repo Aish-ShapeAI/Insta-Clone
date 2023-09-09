@@ -3,6 +3,7 @@ import logo from './Components/fontbolt.png'
 import { NavItem } from "./Components/NavItem";
 import { FollowBack } from "./Components/FollowBack";
 import { Post } from "./Components/Post";
+import Menu from './Components/Menu';
 
 function App() {
 
@@ -35,7 +36,7 @@ function App() {
   ];
   return (
     <div className="container">
-
+<Menu/>
       <div className="side-bar"> 
         <img src={logo} width="170" alt="Logo" />
         <div>
@@ -51,7 +52,7 @@ function App() {
           <NavItem icon="chat" text="Messages" link=""></NavItem></a>
           <a href="https://www.chatgpt.com" target="_blank" rel="noopener noreferrer">
           <NavItem icon="favorite" text="Notifications" link=""></NavItem></a>
-          <a href="https://www.instram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
           <NavItem icon="add_circle" text="Create" link=""></NavItem></a>
           <a href="/https://www.instagram.com" target="_blank" rel="noopener noreferrer">
           <NavItem icon="account_circle" text="Profile" link=""></NavItem></a>

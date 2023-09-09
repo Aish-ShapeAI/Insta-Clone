@@ -61,6 +61,7 @@ html {
 
 .side-bar .logo {
   padding: 24px 12px;
+  
 }
 
 .nav-item:hover {
@@ -150,8 +151,37 @@ a{color: black;
   align-items: center;
   justify-content: center;
 }
-
 .post{
   display: flex;
   justify-content: center;
+}
+.Menu {
+  padding-top:20px;
+}
+.Menu button{
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #e4e4e4;
+  cursor: pointer;
+  margin: 10px;
+
+}
+
+/* Hide icon for screens above 769px */
+@media (min-width: 770px) {
+  .Menu {
+    display: none;
+  }
+}
+
+/* Display icon for screens below 769px */
+@media (max-width: 769px) {
+  .Menu {
+    display: block;
+  }
+
+  .side-bar,
+  .right-side-bar {
+    display: none;
+  }
 }
